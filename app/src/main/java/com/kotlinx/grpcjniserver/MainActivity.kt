@@ -15,15 +15,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Example of a call to a native method
-        binding.sampleText.text = stringFromJNI()
+        runUdpCarplayServer()
     }
 
-    /**
-     * A native method that is implemented by the 'grpcjniserver' native library,
-     * which is packaged with this application.
-     */
-    external fun stringFromJNI(): String
+    external fun runUdpCarplayServer()
 
     companion object {
         // Used to load the 'grpcjniserver' library on application startup.

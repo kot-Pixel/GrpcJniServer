@@ -53,6 +53,8 @@ add_library(${CMAKE_PROJECT_NAME} SHARED
 
         helloworld.protoc.grpc.pb.cc
         helloworld.protoc.pb.cc
+        rfcomm.protoc.grpc.pb.cc
+        rfcomm.protoc.pb.cc
 
         native-lib.cpp)
 
